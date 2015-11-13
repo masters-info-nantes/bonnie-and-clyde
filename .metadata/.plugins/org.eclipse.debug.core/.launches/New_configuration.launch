@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.mia.studio.generation.core.launch">
+<stringAttribute key="applicableType" value="Model"/>
+<booleanAttribute key="applyToSubtypes" value="false"/>
+<stringAttribute key="bundleSymbolicName" value="com.mia.miniproject.mvc2java.generation"/>
+<booleanAttribute key="exportUnusedScripts" value="false"/>
+<booleanAttribute key="exportUsedScripts" value="false"/>
+<booleanAttribute key="generateBeforeWriting" value="false"/>
+<booleanAttribute key="generateIntoFile" value="true"/>
+<booleanAttribute key="generateOnScreen" value="false"/>
+<booleanAttribute key="generateTraces" value="true"/>
+<stringAttribute key="lineSeparator" value="System default"/>
+<stringAttribute key="metamodel" value="MVC"/>
+<stringAttribute key="modelManagerSelectedURI" value="platform:/resource/com.mia.banque.application.generated/models/banqueApplication.mvc.xmi"/>
+<stringAttribute key="outputDirectory" value="platform:/resource/com.mia.banque.application.generated/src"/>
+<booleanAttribute key="outputDirectoryAsSource" value="true"/>
+<listAttribute key="outputDirectoryHistory">
+<listEntry value="platform:/resource/com.mia.banque.application.generated/src"/>
+<listEntry value="file:/home/anthony/Documents/Master/Semestre%203%20(M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/"/>
+<listEntry value="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/.metadata/.plugins/com.mia.studio.common.core/9.2/Mia-Generation/generation"/>
+</listAttribute>
+<booleanAttribute key="overwriteOnlyWhenModified" value="false"/>
+<stringAttribute key="packageName" value="com.mia.miniproject.mvc2java.generation.swt"/>
+<booleanAttribute key="proposeDependencies" value="false"/>
+<booleanAttribute key="refreshGenerationDirectory" value="true"/>
+<booleanAttribute key="refreshModelBeforeGeneration" value="false"/>
+<booleanAttribute key="refreshModelBeforeGenerationAllowed" value="true"/>
+<stringAttribute key="scenarioMetaObject" value="Model"/>
+<stringAttribute key="scenarioName" value="model generation"/>
+<booleanAttribute key="selectionWithModelManager" value="true"/>
+<stringAttribute key="sourceDirectory" value="file:/home/anthony/Dropbox/Cours/Master/Semestre%203%20(M2)/MDE/bonnie-and-clyde"/>
+<listAttribute key="sourceDirectoryHistory">
+<listEntry value="file:/home/anthony/Dropbox/Cours/Master/Semestre%203%20(M2)/MDE/bonnie-and-clyde"/>
+</listAttribute>
+<stringAttribute key="unusedScriptsExportLocation" value="file:/run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/exportUnusedScripts.csv"/>
+<listAttribute key="unusedScriptsExportLocationHistory">
+<listEntry value="file:/run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/exportUnusedScripts.csv"/>
+<listEntry value="file:/run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/"/>
+</listAttribute>
+<stringAttribute key="usedScriptsExportLocation" value="file:/run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/exportUsedScripts.csv"/>
+<listAttribute key="usedScriptsExportLocationHistory">
+<listEntry value="file:/run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/exportUsedScripts.csv"/>
+<listEntry value="file:/run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/"/>
+</listAttribute>
+<booleanAttribute key="workspaceOnly" value="false"/>
+</launchConfiguration>

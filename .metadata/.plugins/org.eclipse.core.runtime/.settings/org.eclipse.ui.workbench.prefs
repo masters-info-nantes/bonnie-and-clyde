@@ -1,3 +1,5 @@
+//org.eclipse.ui.commands/state/com.mia.studio.generation.ui.jface.commands.LinkWithResultsView/org.eclipse.ui.commands.toggleState=true
+//org.eclipse.ui.commands/state/com.mia.studio.generation.ui.jface.commands.LinkWithTracesTreeView/org.eclipse.ui.commands.toggleState=true
 ACTIVE_HYPERLINK_COLOR=138,201,242
 CONFLICTING_COLOR=240,15,66
 CONTENT_ASSIST_BACKGROUND_COLOR=52,57,61

@@ -1,37 +1,37 @@
-[Generation License information] 23/10/15 10:15 Previous used configuration : Architect Community.
+[Generation License information] 13/11/15 09:47 Previous used configuration : Architect Enterprise.
 Connecting to license manager...
-[Generation License information] Initialization error : Invalid value for license file : No such license /run/media/anthony/home/Alma2015/Installateurs/Mia-Studio9.2.0.alpha/packages/eclipse/licenses/license.dat
-[Generation License information] 23/10/15 10:15 Connected to license manager : (No license manager)
-[Generation License information] 23/10/15 10:15 Retrieving licenses information from : null
-[Generation License information] 23/10/15 10:15 Obtained feature : MIA_GEN_ARCHITECT_COM
-[Generation License information] 23/10/15 10:15 Feature provided by : 
-[Generation License information] 23/10/15 10:15 Current configuration : ARCHITECT COMMUNITY
+[Generation License information] 13/11/15 09:47 Connected to license manager : BLM
+[Generation License information] 13/11/15 09:47 Testing availability for feature named "MIA_GEN_DEVELOPER" : available
+[Generation License information] 13/11/15 09:47 Testing availability for feature named "MIA_GEN_ARCHITECT" : available
+[Generation License information] 13/11/15 09:47 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Generation License information] 13/11/15 09:47 Obtained feature : MIA_GEN_ARCHITECT
+[Generation License information] 13/11/15 09:47 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Generation License information] 13/11/15 09:47 Current configuration : ARCHITECT ENTERPRISE
 [Mia-Studio Log information] Log messages will be archived into /home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/.metadata/.plugins/com.mia.studio.common.core/9.2/Mia-Generation/log
-[Generation License information] 23/10/15 10:26 Testing availability for feature named "MIA_GEN_DEVELOPER" : available
-[Generation License information] 23/10/15 10:26 Testing availability for feature named "MIA_GEN_ARCHITECT" : available
-[Generation License information] 23/10/15 10:26 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
-ded by : 
-[Generation License information] 23/10/15 10:15 Current configuration : ARCHITECT COMMUNITY
-[Generation License information] 23/10/15 10:15 Current configuration : ARCHITECT COMMUNITY
+nses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Generation License information] 13/11/15 09:47 Obtained feature : MIA_GEN_ARCHITECT
+[Generation License information] 13/11/15 09:47 Obtained feature : MIA_GEN_ARCHITECT
+[Generation License information] 13/11/15 09:47 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Generation License information] 13/11/15 09:47 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Generation License information] 13/11/15 09:47 Current configuration : ARCHITECT ENTERPRISE
+[Generation License information] 13/11/15 09:47 Current configuration : ARCHITECT ENTERPRISE
 [Mia-Studio Log information] Log messages will be archived into /home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/.metadata/.plugins/com.mia.studio.common.core/9.2/Mia-Generation/log
 [Mia-Studio Log information] Log messages will be archived into /home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/.metadata/.plugins/com.mia.studio.common.core/9.2/Mia-Generation/log
-[Transformation License information] 23/10/15 10:15 Previous used configuration : Architect Community.
-[Transformation License information] 23/10/15 10:15 Previous used configuration : Architect Community.
+[Transformation License information] 13/11/15 09:48 Previous used configuration : Architect Enterprise.
+[Transformation License information] 13/11/15 09:48 Previous used configuration : Architect Enterprise.
 Connecting to license manager...
 Connecting to license manager...
-[Transformation License information] 23/10/15 10:15 Connected to license manager : (No license manager)
-[Transformation License information] 23/10/15 10:15 Connected to license manager : (No license manager)
-[Transformation License information] 23/10/15 10:15 Retrieving licenses information from : null
-[Transformation License information] 23/10/15 10:15 Retrieving licenses information from : null
-[Transformation License information] 23/10/15 10:15 Obtained feature : MIA_TRANS_ARCHITECT_COM
-[Transformation License information] 23/10/15 10:15 Obtained feature : MIA_TRANS_ARCHITECT_COM
-[Transformation License information] 23/10/15 10:15 Feature provided by : 
-[Transformation License information] 23/10/15 10:15 Feature provided by : 
-[Transformation License information] 23/10/15 10:15 Current configuration : ARCHITECT COMMUNITY
-[Transformation License information] 23/10/15 10:15 Current configuration : ARCHITECT COMMUNITY
-[Generation License information] 23/10/15 10:26 Testing availability for feature named "MIA_GEN_DEVELOPER" : available
-[Generation License information] 23/10/15 10:26 Testing availability for feature named "MIA_GEN_DEVELOPER" : available
-[Generation License information] 23/10/15 10:26 Testing availability for feature named "MIA_GEN_ARCHITECT" : available
-[Generation License information] 23/10/15 10:26 Testing availability for feature named "MIA_GEN_ARCHITECT" : available
-[Generation License information] 23/10/15 10:26 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
-[Generation License information] 23/10/15 10:26 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 13/11/15 09:48 Connected to license manager : BLM
+[Transformation License information] 13/11/15 09:48 Connected to license manager : BLM
+[Transformation License information] 13/11/15 09:48 Testing availability for feature named "MIA_TRANS_ARCHITECT" : available
+[Transformation License information] 13/11/15 09:48 Testing availability for feature named "MIA_TRANS_ARCHITECT" : available
+[Transformation License information] 13/11/15 09:48 Testing availability for feature named "MIA_TRANS_DEVELOPER" : available
+[Transformation License information] 13/11/15 09:48 Testing availability for feature named "MIA_TRANS_DEVELOPER" : available
+[Transformation License information] 13/11/15 09:48 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 13/11/15 09:48 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 13/11/15 09:48 Obtained feature : MIA_TRANS_ARCHITECT
+[Transformation License information] 13/11/15 09:48 Obtained feature : MIA_TRANS_ARCHITECT
+[Transformation License information] 13/11/15 09:48 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 13/11/15 09:48 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 13/11/15 09:48 Current configuration : ARCHITECT ENTERPRISE
+[Transformation License information] 13/11/15 09:48 Current configuration : ARCHITECT ENTERPRISE
