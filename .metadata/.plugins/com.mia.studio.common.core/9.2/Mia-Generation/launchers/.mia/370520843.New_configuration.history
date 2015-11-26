@@ -8,23 +8,31 @@
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/BanqueView.java"
         status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/swt/BanqueControler.java"
+        status="modified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/IClientView.java"
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/IClientControler.java"
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/ClientView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/swt/ClientControler.java"
         status="modified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/ICompteView.java"
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/ICompteControler.java"
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/CompteView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/swt/CompteControler.java"
         status="modified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/IOperationView.java"
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/IOperationControler.java"
         status="unmodified" fileEncoding="UTF-8"/>
       <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/view/swt/OperationView.java"
+        status="unmodified" fileEncoding="UTF-8"/>
+      <entry file="/home/anthony/Dropbox/Cours/Master/Semestre 3 (M2)/MDE/bonnie-and-clyde/com.mia.banque.application.generated/src/com/mia/banque/ui/controler/swt/OperationControler.java"
         status="modified" fileEncoding="UTF-8"/>
     </source>
   </launcher>

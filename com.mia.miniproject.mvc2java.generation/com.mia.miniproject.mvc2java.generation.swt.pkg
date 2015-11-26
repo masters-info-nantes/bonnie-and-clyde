@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE PACKAGE SYSTEM "package.dtd">
-<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.swt" METAMODEL="MVC" NUMBER="33"
+<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.swt" METAMODEL="MVC" NUMBER="42"
 >
 	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.2.0"/>
 	<SCENARIO NAME="model generation" VISIBILITY="public" META_OBJECT="Model" CATEGORY="default">
@@ -13,11 +13,34 @@
 		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="IView" PARAM_COUNT="0"/>
 		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="IControler" PARAM_COUNT="0"/>
 		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="View" PARAM_COUNT="0"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="Controler" PARAM_COUNT="0"/>
 	</SCENARIO>
 	<SCRIPT NAME="actionsDefinition" META_OBJECT="Action" CATEGORY="default">
 		<TEXT><![CDATA[
 	public void [[name]]();
 
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="controlerMethodsActions" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+	public void [[name]]() {
+		[[BeginTag]]
+		[[EndTag]]
+	}
+
+
+]]></TEXT>
+		<PROPERTY NAME="BeginTag"/>
+		<PROPERTY NAME="EndTag"/>
+	</SCRIPT>
+	<SCRIPT NAME="controlerMethodsActions$BeginTag" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+// Start of user code for [[name]]
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="controlerMethodsActions$EndTag" META_OBJECT="Action" CATEGORY="default">
+		<TEXT><![CDATA[
+// End of user code for [[name]]
 ]]></TEXT>
 	</SCRIPT>
 	<SCRIPT NAME="viewAttributesButton" META_OBJECT="Action" CATEGORY="default">
@@ -193,6 +216,30 @@ com/mia/banque/model/impl/[[name]].java
 
 ]]></TEXT>
 	</SCRIPT>
+	<SCRIPT NAME="Controler" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.controler.swt;
+
+[[importsSwt]]
+[[controlerImportsProject]]
+
+public class [[model.name]]Controler implements I[[model.name]]Controler {
+[[controlerAttributes]]
+
+[[controlerConstruct]]
+
+[[controlerInitView]]
+
+[[actions.controlerMethodsActions]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="Controler$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/controler/swt/[[model.name]]Controler.java
+]]></TEXT>
+	</SCRIPT>
 	<SCRIPT NAME="IControler" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
 		<TEXT><![CDATA[
 package com.mia.banque.ui.controler;
@@ -232,7 +279,8 @@ com/mia/banque/ui/view/I[[name]].java
 package com.mia.banque.ui.view.swt;
 
 [[importsSwt]]
-[[importsProject]] 
+
+[[viewImportsProject]] 
 
 public class [[name]] extends Shell implements I[[name]]{
 [[viewAttributes]]
@@ -256,11 +304,44 @@ public class [[name]] extends Shell implements I[[name]]{
 com/mia/banque/ui/view/swt/[[name]].java
 ]]></TEXT>
 	</SCRIPT>
-	<SCRIPT NAME="importsProject" META_OBJECT="View" CATEGORY="default">
+	<SCRIPT NAME="controlerAttributes" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+	private [[name]] view;
+	private I[[model.name]] model;
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="controlerConstruct" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+	public [[model.name]]Controler(com.mia.banque.model.I[[model.name]] model) {
+		this.model = model;
+	}
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="controlerImportsProject" META_OBJECT="View" CATEGORY="default">
 		<TEXT><![CDATA[
 import com.mia.banque.ui.controler.I[[model.name]]Controler;
 import com.mia.banque.ui.view.I[[model.name]]View;
+import com.mia.banque.ui.view.swt.[[model.name]]View;
 import com.mia.banque.model.I[[model.name]];
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="controlerInitView" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+	public void initView() {
+		Display display = Display.getDefault();
+		
+		
+		this.view = new [[model.name]]View(display, this.model, this);
+		this.view.open();
+		this.view.layout();
+		
+		while (!this.view.isDisposed()) {
+			if (!display.readAndDispatch()) {
+				display.sleep();
+			}
+		}
+
+	}
 ]]></TEXT>
 	</SCRIPT>
 	<SCRIPT NAME="importsSwt" META_OBJECT="View" CATEGORY="default">
@@ -306,6 +387,13 @@ import org.eclipse.swt.widgets.Group;
 		
 		createContents();
 	}
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="viewImportsProject" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+import com.mia.banque.ui.controler.I[[model.name]]Controler;
+import com.mia.banque.ui.view.I[[model.name]]View;
+import com.mia.banque.model.I[[model.name]];
 ]]></TEXT>
 	</SCRIPT>
 	<SCRIPT NAME="viewInitContentGroupBtn" META_OBJECT="View" CATEGORY="default">
