@@ -1,12 +1,12 @@
-package com.mia.banque.model;
+package com.mia.banque.model.impl;
 
 import java.util.List;
 import java.util.ArrayList;
-import com.mia.banque.model.IBanque;
+import com.mia.banque.model.*;
 
 
 public class Banque implements IBanque{
-	private List<Client> listClient;
+	private List<IClient> listClient;
 
 	public List<IClient> getClient() {
 		return this.listClient;

@@ -1,13 +1,13 @@
-package com.mia.banque.model;
+package com.mia.banque.model.impl;
 
 import java.util.List;
 import java.util.ArrayList;
-import com.mia.banque.model.ICompte;
+import com.mia.banque.model.*;
 
 
 public class Compte implements ICompte{
 	private String Numero;
-	private List<Operation> listOperation;
+	private List<IOperation> listOperation;
 
 	public String getNumero() {
 		return this.Numero;

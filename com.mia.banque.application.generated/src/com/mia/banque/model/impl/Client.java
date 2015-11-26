@@ -1,15 +1,15 @@
-package com.mia.banque.model;
+package com.mia.banque.model.impl;
 
 import java.util.List;
 import java.util.ArrayList;
-import com.mia.banque.model.IClient;
+import com.mia.banque.model.*;
 
 
 public class Client implements IClient{
 	private String Nom;
 	private String Prenom;
 	private String Adresse;
-	private List<Compte> listCompte;
+	private List<ICompte> listCompte;
 
 	public String getNom() {
 		return this.Nom;

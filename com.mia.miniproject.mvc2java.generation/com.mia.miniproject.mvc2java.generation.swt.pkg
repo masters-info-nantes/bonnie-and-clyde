@@ -38,17 +38,16 @@ import java.util.List;
 	</SCRIPT>
 	<SCRIPT NAME="ImportModel" META_OBJECT="Model" CATEGORY="default">
 		<TEXT><![CDATA[
-import com.mia.banque.model.I[[args.extClass]];
+import com.mia.banque.model.*;
 
 ]]></TEXT>
-		<PARAMETER NAME="extClass" TYPE_KIND="primitive" TYPE_NAME="String"/>
 	</SCRIPT>
 	<SCRIPT NAME="Model" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
 		<TEXT><![CDATA[
-package com.mia.banque.model;
+package com.mia.banque.model.impl;
 
 [[ImportArrayList]]
-[[ImportModel(name)]]
+[[ImportModel]]
 
 public class [[name]] implements I[[name]]{
 [[attributes]]
@@ -72,7 +71,7 @@ return result;
 	</TEXT_MACRO>
 	<SCRIPT NAME="attributesDeclaration" META_OBJECT="Model" CATEGORY="default">
 		<TEXT><![CDATA[
-	private List<[[name@¤] list[[name]];
+	private List<I[[name@¤] list[[name]];
 
 ]]></TEXT>
 	</SCRIPT>
