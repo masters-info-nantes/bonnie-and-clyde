@@ -1,0 +1,10 @@
+package com.mia.banque.ui.view;
+
+public interface IOperationView {
+	
+	public String getNumero();
+	public void setNumero(String newVal);
+	public String getMontant();
+	public void setMontant(String newVal);
+
+}

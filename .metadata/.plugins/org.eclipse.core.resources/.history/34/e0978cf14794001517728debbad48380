@@ -1,0 +1,14 @@
+package com.mia.banque.ui.view;
+
+public interface IClientView {
+	
+	public String getNom();
+	public void setNom(String newVal);
+	public String getPrenom();
+	public void setPrenom(String newVal);
+	public String getAdresse();
+	public void setAdresse(String newVal);
+	public List<ICompte> getCompte();
+	public void setCompte(List<ICompte> newVal);
+
+}

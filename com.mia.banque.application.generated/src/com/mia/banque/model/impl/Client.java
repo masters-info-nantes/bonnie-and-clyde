@@ -9,6 +9,7 @@ public class Client implements IClient{
 	private String Nom;
 	private String Prenom;
 	private String Adresse;
+
 	private List<ICompte> listCompte;
 
 	public String getNom() {
@@ -34,6 +35,7 @@ public class Client implements IClient{
 	public void setAdresse(String newVal) {
 		this.Adresse = newVal;
 	}
+
 
 	public List<ICompte> getCompte() {
 		return this.listCompte;

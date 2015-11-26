@@ -7,6 +7,7 @@ import com.mia.banque.model.*;
 
 public class Compte implements ICompte{
 	private String Numero;
+
 	private List<IOperation> listOperation;
 
 	public String getNumero() {
@@ -16,6 +17,7 @@ public class Compte implements ICompte{
 	public void setNumero(String newVal) {
 		this.Numero = newVal;
 	}
+
 
 	public List<IOperation> getOperation() {
 		return this.listOperation;

@@ -6,7 +6,9 @@ import com.mia.banque.model.*;
 
 
 public class Banque implements IBanque{
+
 	private List<IClient> listClient;
+
 
 	public List<IClient> getClient() {
 		return this.listClient;

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PACKAGE SYSTEM "package.dtd">
+<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.swt" METAMODEL="MVC" NUMBER="20"
+>
+	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.2.0"/>
+	<SCENARIO NAME="model generation" VISIBILITY="public" META_OBJECT="Model" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="Model"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="Model" CATEGORY="default" NAME="IModel" PARAM_COUNT="0"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="Model" CATEGORY="default" NAME="Model" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCENARIO NAME="view generation" VISIBILITY="public" META_OBJECT="View" CATEGORY="default">
+		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="View"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="IView" PARAM_COUNT="0"/>
+	</SCENARIO>
+	<SCRIPT NAME="IModel" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
+		<TEXT><![CDATA[
+package com.mia.banque.model;
+
+[[ImportList]]
+
+public interface I[[name]] {
+[[interfacesGetterSetter]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="IModel$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/model/I[[name]].java
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="ImportArrayList" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+[[ImportList]]
+import java.util.ArrayList;
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="ImportList" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+import java.util.List;
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="ImportModel" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+import com.mia.banque.model.*;
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="Model" META_OBJECT="Model" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
+		<TEXT><![CDATA[
+package com.mia.banque.model.impl;
+
+[[ImportArrayList]]
+[[ImportModel]]
+
+public class [[name]] implements I[[name]]{
+[[attributes]]
+[[getterSetter]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="Model$Filename" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/model/impl/[[name]].java
+]]></TEXT>
+	</SCRIPT>
+	<TEXT_MACRO NAME="attributes" META_OBJECT="Model" CATEGORY="default" RETURN_TYPE_KIND="primitive" RETURN_TYPE_NAME="String">
+		<TEXT><![CDATA[
+String result = "";
+result += manager.apply(current.getProperties(),"attributesDeclaration");
+result += manager.apply(current.getOwnedElements(),"attributesDeclaration");
+return result;
+]]></TEXT>
+	</TEXT_MACRO>
+	<SCRIPT NAME="attributesDeclaration" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+	private List<I[[name@¤] list[[name]];
+
+]]></TEXT>
+	</SCRIPT>
+	<TEXT_MACRO NAME="getterSetter" META_OBJECT="Model" CATEGORY="default" RETURN_TYPE_KIND="primitive" RETURN_TYPE_NAME="String">
+		<TEXT><![CDATA[
+String result = "";
+result += manager.apply(current.getProperties(),"getterSetterDeclaration");
+result += manager.apply(current.getOwnedElements(),"getterSetterDeclaration");
+return result;
+]]></TEXT>
+	</TEXT_MACRO>
+	<SCRIPT NAME="getterSetterDeclaration" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+	public List<I[[name@¤] get[[name]]() {
+		return this.list[[name]];
+	}
+	
+	public void set[[name]](List<I[[name@¤] newVal) {
+		this.list[[name]] = newVal;
+	}
+	
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="getterSetterDefinition" META_OBJECT="Model" CATEGORY="default">
+		<TEXT><![CDATA[
+	public List<I[[name@¤] get[[name]]();
+	public void set[[name]](List<I[[name@¤] newVal);
+
+]]></TEXT>
+	</SCRIPT>
+	<TEXT_MACRO NAME="interfacesGetterSetter" META_OBJECT="Model" CATEGORY="default" RETURN_TYPE_KIND="primitive" RETURN_TYPE_NAME="String">
+		<TEXT><![CDATA[
+String result = "";
+result += manager.apply(current.getProperties(),"getterSetterDefinition");
+result += manager.apply(current.getOwnedElements(),"getterSetterDefinition");
+return result;
+]]></TEXT>
+	</TEXT_MACRO>
+	<SCRIPT NAME="attributesDeclaration" META_OBJECT="ModelProperty" CATEGORY="default">
+		<TEXT><![CDATA[
+	private String [[name]];
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="getterSetterDeclaration" META_OBJECT="ModelProperty" CATEGORY="default">
+		<TEXT><![CDATA[
+	public String get[[name]]() {
+		return this.[[name]];
+	}
+	
+	public void set[[name]](String newVal) {
+		this.[[name]] = newVal;
+	}
+
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="getterSetterDefinition" META_OBJECT="ModelProperty" CATEGORY="default">
+		<TEXT><![CDATA[
+	public String get[[name]]();
+	public void set[[name]](String newVal);
+
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="IView" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.view;
+
+public interface I[[name]] {
+	
+[[interfacesGetterSetter]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="IView$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+result.txtcom/mia/banque/ui/view/I[[name]]View.java
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="actionDefinition" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+	public void [[name]]();
+]]></TEXT>
+	</SCRIPT>
+	<TEXT_MACRO NAME="interfacesGetterSetter" META_OBJECT="View" CATEGORY="default" RETURN_TYPE_KIND="primitive" RETURN_TYPE_NAME="String">
+		<TEXT><![CDATA[
+String result = "";
+result += manager.apply(current.getActions(),"actionDefinition");
+return result;
+]]></TEXT>
+	</TEXT_MACRO>
+</PACKAGE>

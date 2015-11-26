@@ -9,6 +9,7 @@ public interface IClient {
 	public void setPrenom(String newVal);
 	public String getAdresse();
 	public void setAdresse(String newVal);
+
 	public List<ICompte> getCompte();
 	public void setCompte(List<ICompte> newVal);
 

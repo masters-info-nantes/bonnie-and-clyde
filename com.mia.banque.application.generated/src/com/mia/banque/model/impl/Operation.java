@@ -9,6 +9,7 @@ public class Operation implements IOperation{
 	private String Numero;
 	private String Montant;
 
+
 	public String getNumero() {
 		return this.Numero;
 	}
@@ -24,6 +25,7 @@ public class Operation implements IOperation{
 	public void setMontant(String newVal) {
 		this.Montant = newVal;
 	}
+
 
 
 }

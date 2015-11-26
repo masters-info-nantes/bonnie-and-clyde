@@ -1,0 +1,8 @@
+package com.mia.banque.ui.view;
+
+public interface IBanqueView {
+	
+	public List<IClient> getClient();
+	public void setClient(List<IClient> newVal);
+
+}

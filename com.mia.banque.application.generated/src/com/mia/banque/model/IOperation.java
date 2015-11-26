@@ -8,4 +8,5 @@ public interface IOperation {
 	public String getMontant();
 	public void setMontant(String newVal);
 
+
 }

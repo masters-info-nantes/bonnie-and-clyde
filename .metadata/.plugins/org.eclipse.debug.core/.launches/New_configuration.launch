@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="com.mia.studio.generation.core.launch">
-<stringAttribute key="applicableType" value="Model"/>
+<stringAttribute key="applicableType" value="View"/>
 <booleanAttribute key="applyToSubtypes" value="false"/>
 <stringAttribute key="bundleSymbolicName" value="com.mia.miniproject.mvc2java.generation"/>
 <booleanAttribute key="exportUnusedScripts" value="false"/>
@@ -25,8 +25,8 @@
 <booleanAttribute key="refreshGenerationDirectory" value="true"/>
 <booleanAttribute key="refreshModelBeforeGeneration" value="false"/>
 <booleanAttribute key="refreshModelBeforeGenerationAllowed" value="true"/>
-<stringAttribute key="scenarioMetaObject" value="Model"/>
-<stringAttribute key="scenarioName" value="model generation"/>
+<stringAttribute key="scenarioMetaObject" value="View"/>
+<stringAttribute key="scenarioName" value="view generation"/>
 <booleanAttribute key="selectionWithModelManager" value="true"/>
 <stringAttribute key="sourceDirectory" value="file:/home/anthony/Dropbox/Cours/Master/Semestre%203%20(M2)/MDE/bonnie-and-clyde"/>
 <listAttribute key="sourceDirectoryHistory">
