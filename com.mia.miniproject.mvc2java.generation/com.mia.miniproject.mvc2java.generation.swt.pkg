@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE PACKAGE SYSTEM "package.dtd">
-<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.swt" METAMODEL="MVC" NUMBER="16"
+<PACKAGE NAME="com.mia.miniproject.mvc2java.generation.swt" METAMODEL="MVC" NUMBER="18"
 >
 	<fileHeader version="5" toolName="Mia-Generation" toolVersion="9.2.0"/>
 	<SCENARIO NAME="model generation" VISIBILITY="public" META_OBJECT="Model" CATEGORY="default">
@@ -11,10 +11,11 @@
 	<SCENARIO NAME="view generation" VISIBILITY="public" META_OBJECT="View" CATEGORY="default">
 		<SERVICE_CALL NAME="current" PACKAGE="System" META_OBJECT="View"/>
 		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="IView" PARAM_COUNT="0"/>
+		<GENERATION_STEP TYPE="FileTemplate" PACKAGE="com.mia.miniproject.mvc2java.generation.swt" META_OBJECT="View" CATEGORY="default" NAME="IControler" PARAM_COUNT="0"/>
 	</SCENARIO>
 	<SCRIPT NAME="actionsDefinition" META_OBJECT="Action" CATEGORY="default">
 		<TEXT><![CDATA[
-public void [[name]]();
+	public void [[name]]();
 
 ]]></TEXT>
 	</SCRIPT>
@@ -124,6 +125,24 @@ com/mia/banque/model/impl/[[name]].java
 	public String get[[name]]();
 	public void set[[name]](String newVal);
 
+]]></TEXT>
+	</SCRIPT>
+	<SCRIPT NAME="IControler" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
+		<TEXT><![CDATA[
+package com.mia.banque.ui.controler;
+
+public interface I[[model.name]]Controler {
+	
+	public void initView();
+	
+[[actions.actionsDefinition]]
+}
+]]></TEXT>
+		<PROPERTY NAME="Filename"/>
+	</SCRIPT>
+	<SCRIPT NAME="IControler$Filename" META_OBJECT="View" CATEGORY="default">
+		<TEXT><![CDATA[
+com/mia/banque/ui/controler/I[[model.name]]Controler.java
 ]]></TEXT>
 	</SCRIPT>
 	<SCRIPT NAME="IView" META_OBJECT="View" CATEGORY="default" FILE_ENCODING="UTF-8" VISIBILITY="private">
