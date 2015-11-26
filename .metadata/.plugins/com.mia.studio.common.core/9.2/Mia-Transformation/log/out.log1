@@ -1,9 +1,9 @@
-[Transformation License information] 26/11/15 14:04 Previous used configuration : Architect Enterprise.
+[Transformation License information] 26/11/15 21:24 Previous used configuration : Architect Enterprise.
 Connecting to license manager...
-[Transformation License information] 26/11/15 14:04 Connected to license manager : BLM
-[Transformation License information] 26/11/15 14:04 Testing availability for feature named "MIA_TRANS_ARCHITECT" : available
-[Transformation License information] 26/11/15 14:04 Testing availability for feature named "MIA_TRANS_DEVELOPER" : available
-[Transformation License information] 26/11/15 14:04 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
-[Transformation License information] 26/11/15 14:04 Obtained feature : MIA_TRANS_ARCHITECT
-[Transformation License information] 26/11/15 14:04 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
-[Transformation License information] 26/11/15 14:04 Current configuration : ARCHITECT ENTERPRISE
+[Transformation License information] 26/11/15 21:24 Connected to license manager : BLM
+[Transformation License information] 26/11/15 21:24 Testing availability for feature named "MIA_TRANS_ARCHITECT" : available
+[Transformation License information] 26/11/15 21:24 Testing availability for feature named "MIA_TRANS_DEVELOPER" : available
+[Transformation License information] 26/11/15 21:24 Retrieving licenses information from : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 26/11/15 21:24 Obtained feature : MIA_TRANS_ARCHITECT
+[Transformation License information] 26/11/15 21:24 Feature provided by : /run/media/anthony/home/Alma2015/Licences/linux-mac/license.dat
+[Transformation License information] 26/11/15 21:24 Current configuration : ARCHITECT ENTERPRISE

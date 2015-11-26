@@ -19,11 +19,11 @@ public class Compte implements ICompte{
 	}
 
 
-	public List<IOperation> getOperation() {
+	public List<IOperation> getOperations() {
 		return this.listOperation;
 	}
 	
-	public void setOperation(List<IOperation> newVal) {
+	public void setOperations(List<IOperation> newVal) {
 		this.listOperation = newVal;
 	}
 	

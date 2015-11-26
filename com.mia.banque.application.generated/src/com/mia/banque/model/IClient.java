@@ -10,7 +10,7 @@ public interface IClient {
 	public String getAdresse();
 	public void setAdresse(String newVal);
 
-	public List<ICompte> getCompte();
-	public void setCompte(List<ICompte> newVal);
+	public List<ICompte> getComptes();
+	public void setComptes(List<ICompte> newVal);
 
 }

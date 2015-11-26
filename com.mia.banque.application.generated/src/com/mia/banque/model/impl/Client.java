@@ -37,11 +37,11 @@ public class Client implements IClient{
 	}
 
 
-	public List<ICompte> getCompte() {
+	public List<ICompte> getComptes() {
 		return this.listCompte;
 	}
 	
-	public void setCompte(List<ICompte> newVal) {
+	public void setComptes(List<ICompte> newVal) {
 		this.listCompte = newVal;
 	}
 	
