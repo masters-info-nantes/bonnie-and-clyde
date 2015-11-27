@@ -163,9 +163,9 @@ com/mia/banque/model/impl/[[name]].java
 	<SCRIPT NAME="viewInitContentInitList" META_OBJECT="Model" CATEGORY="default">
 		<TEXT><![CDATA[
 		Group grp[[name]] = new Group(this, SWT.NONE);
-		grpClient.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
-		grpClient.setText("Liste des [[name]]");
-		grpClient.setLayout(new GridLayout());
+		grp[[name]].setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 2, 1));
+		grp[[name]].setText("Liste des [[name]]");
+		grp[[name]].setLayout(new GridLayout());
 		
 		this.[[name]]List = new List(grp[[name]], SWT.BORDER | SWT.V_SCROLL | SWT.SINGLE);
 		this.[[name]]List.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
@@ -209,7 +209,7 @@ com/mia/banque/model/impl/[[name]].java
 		lbl[[name]].setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false,1, 1));
 		lbl[[name]].setText("[[name]]");
 	
-		Text NomField = new Text(this, SWT.BORDER);
+		Text [[name]]Field = new Text(this, SWT.BORDER);
 		[[name]]Field.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true,false, 1, 1));
 		[[name]]Field.setText(this.model.get[[name]]());
 		
